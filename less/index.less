@@ -3,7 +3,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Gayathri&display=swap');
 
 html, body, div, span, applet, object, iframe,
@@ -64,6 +64,11 @@ html, body {
     height: 100%;
 }
 
+
+
+
+
+
 h1{
 	font-family: 'Gayathri', sans-serif;
 }
@@ -72,6 +77,7 @@ h1{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	
 
 	h1{
 		font-size: 2.5rem;
@@ -87,10 +93,13 @@ h1{
 
 .main-content{
 	padding: 5rem;
+	width: 100%;
 	
-
 	.top-content{
 		display: flex;
+		border: 10px inset #36ABFF;
+		border-radius: 22px 22px 22px 22px;
+		padding: 5rem;
 		
 		.intro{
 			width: 40%;
@@ -98,7 +107,43 @@ h1{
 
 		.link-up{
 			width: 40%;
-		}
+		}//closes link-up
 	}//closes top-content
+
+	.middle-content{
+		display: flex;
+		//border: 1px solid red;
+		line-height: 4vh;
+		font-size: 3rem;
+		border: 11px dotted #59A0A4;
+		border-radius: 40px 40px 40px 40px;
+		padding: 5rem;
+
+		.mid-h2{
+			font-family: 'Merriweather', serif;
+			width: 40%;
+		}//closes mid-h2
+		.midP{
+			width: 40%;
+		}//closes midP
+		#mid-content-list{
+			width: 65%;
+			border: 1px solid red;
+			.mid-list-h3{
+				border: 1px solid red;
+			}//close mid-list-h3
+		}//closes mid-content-list
+	}//closes middle-content
 }//closes main-content
+
+
+
+
+
+
+
+
+
+
+
 

@@ -3,6 +3,13 @@
    License: none (public domain)
 */
 @font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Merriweather Regular'), local('Merriweather-Regular'), url(https://fonts.gstatic.com/s/merriweather/v21/u-440qyriQwlOrhSvowK_l5-fCZJ.ttf) format('truetype');
+}
+@font-face {
   font-family: 'Gayathri';
   font-style: normal;
   font-weight: 400;
@@ -161,13 +168,39 @@ h1 {
 }
 .main-content {
   padding: 5rem;
+  width: 100%;
 }
 .main-content .top-content {
   display: flex;
+  border: 10px inset #36ABFF;
+  border-radius: 22px 22px 22px 22px;
+  padding: 5rem;
 }
 .main-content .top-content .intro {
   width: 40%;
 }
 .main-content .top-content .link-up {
   width: 40%;
+}
+.main-content .middle-content {
+  display: flex;
+  line-height: 4vh;
+  font-size: 3rem;
+  border: 11px dotted #59A0A4;
+  border-radius: 40px 40px 40px 40px;
+  padding: 5rem;
+}
+.main-content .middle-content .mid-h2 {
+  font-family: 'Merriweather', serif;
+  width: 40%;
+}
+.main-content .middle-content .midP {
+  width: 40%;
+}
+.main-content .middle-content #mid-content-list {
+  width: 65%;
+  border: 1px solid red;
+}
+.main-content .middle-content #mid-content-list .mid-list-h3 {
+  border: 1px solid red;
 }
