@@ -3,6 +3,13 @@
    License: none (public domain)
 */
 @font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Open Sans Condensed Bold'), local('OpenSansCondensed-Bold'), url(https://fonts.gstatic.com/s/opensanscondensed/v14/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff0GmDuXMQg.ttf) format('truetype');
+}
+@font-face {
   font-family: 'Merriweather';
   font-style: normal;
   font-weight: 400;
@@ -172,26 +179,32 @@ h1 {
 }
 .main-content .top-content {
   display: flex;
-  border: 10px inset #36ABFF;
+  border: 28px solid #94d8d1;
   border-radius: 22px 22px 22px 22px;
   padding: 5rem;
-  background: #B0E0E6;
+  background: linear-gradient(70deg, #B0E0E6 50%, #39CCCC 50%);
+  margin: 2%;
 }
 .main-content .top-content img {
   width: 40%;
 }
-.main-content .top-content .intro {
-  width: 40%;
+.main-content .top-content .half-section {
+  flex-direction: column;
+  margin: 2%;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.main-content .top-content .half-section .intro {
+  width: 30%;
 }
 .main-content .top-content .link-up {
-  width: 40%;
+  width: 70%;
 }
 .main-content .middle-content {
   display: flex;
   line-height: 4vh;
   font-size: 3rem;
-  border: 11px dotted #59A0A4;
-  border-radius: 40px 40px 40px 40px;
+  border: 14px inset #A09DB0;
+  border-radius: 22px 22px 22px 22px;
   padding: 5rem;
   background: linear-gradient(110deg, #DDDDDD 50%, #AAAAAA 50%);
 }

@@ -3,6 +3,8 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Gayathri&display=swap');
 
@@ -97,21 +99,26 @@ h1{
 	
 	.top-content{
 		display: flex;
-		border: 10px inset #36ABFF;
+		border: 28px solid rgb(148, 216, 209);
 		border-radius: 22px 22px 22px 22px;
 		padding: 5rem;
-		background: #B0E0E6;
-		
+		background: linear-gradient(70deg, #B0E0E6 50%, #39CCCC 50%);
+		margin: 2%;
 		img{
 			width: 40%;
 		}
-
-		.intro{
-			width: 40%;
-		}//closes intro
+		.half-section{
+			flex-direction: column;
+			margin: 2%;
+			font-family: 'Open Sans Condensed', sans-serif;
+			.intro{
+				width: 30%;
+			 
+			}//closes intro
+		}//closes half-section
 
 		.link-up{
-			width: 40%;
+			width: 70%;
 		}//closes link-up
 	}//closes top-content
 
@@ -120,8 +127,8 @@ h1{
 		//border: 1px solid red;
 		line-height: 4vh;
 		font-size: 3rem;
-		border: 11px dotted #59A0A4;
-		border-radius: 40px 40px 40px 40px;
+		border: 14px inset #A09DB0;
+		border-radius: 22px 22px 22px 22px;
 		padding: 5rem;
 		background: linear-gradient(110deg, #DDDDDD 50%, #AAAAAA 50%);
 
