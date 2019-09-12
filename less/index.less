@@ -4,6 +4,32 @@
    License: none (public domain)
 */
 
+
+// mix-ins
+
+@body-background:#FFFFCC;
+@middle-border: #8FBC8F;
+@top-content-gradient-1: #B0E0E6;
+@contact-border: #FF69B4;
+@contact-h4-border: #FF69B4;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Gayathri&display=swap');
@@ -39,7 +65,7 @@ html{
 body {
 	line-height: 1;
 	font-size: 1.6rem;
-	background: #FFFFCC;
+	background: @body-background;
 }
 ol, ul {
 	list-style: none;
@@ -128,7 +154,7 @@ h1{
 		//border: 1px solid red;
 		line-height: 4vh;
 		font-size: 3rem;
-		border: 14px inset #8FBC8F;
+		border: 14px inset @middle-border;
 		border-radius: 22px 22px 22px 22px;
 		padding: 5rem;
 		background: linear-gradient(110deg, #7FFF00 50%, #98FB98
@@ -146,17 +172,6 @@ h1{
 
 		#mid-content-list{
 			width: 80%;
-			border: 1px solid red;
-
-			.mid-list-h3{
-				
-				border: 1px solid red;
-			}//close mid-list-h3
-
-			.mid-list{
-				background: red;
-	
-			}
 		}//closes mid-content-list
 	}//closes middle-content
 
@@ -174,7 +189,7 @@ h1{
 	}//closes bottom-content
 
 	.contact{
-		border:1px solid red;
+		border-top: 19px dotted @contact-border;
 		padding: 5%;
 		margin: 2%;
 		display: flex;
@@ -182,10 +197,12 @@ h1{
 		
 
 		.contact-h4{
-			border: 1px solid red;
+			border-bottom: 19px solid @contact-h4-border;
+			border-radius: 0px 0px 20px 20px;
 			width: 60%;
 			font-size: 5rem;
 			
+
 			
 			#contact-list{
 				font-size: 3rem;

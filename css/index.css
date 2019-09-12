@@ -219,13 +219,6 @@ h1 {
 }
 .main-content .middle-content #mid-content-list {
   width: 80%;
-  border: 1px solid red;
-}
-.main-content .middle-content #mid-content-list .mid-list-h3 {
-  border: 1px solid red;
-}
-.main-content .middle-content #mid-content-list .mid-list {
-  background: red;
 }
 .main-content .bottom-content {
   display: flex;
@@ -240,14 +233,15 @@ h1 {
   color: white;
 }
 .main-content .contact {
-  border: 1px solid red;
+  border-top: 19px dotted #FF69B4;
   padding: 5%;
   margin: 2%;
   display: flex;
   justify-content: center;
 }
 .main-content .contact .contact-h4 {
-  border: 1px solid red;
+  border-bottom: 19px solid #FF69B4;
+  border-radius: 0px 0px 20px 20px;
   width: 60%;
   font-size: 5rem;
 }
