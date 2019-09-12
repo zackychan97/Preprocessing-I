@@ -175,6 +175,10 @@ h1 {
   border: 10px inset #36ABFF;
   border-radius: 22px 22px 22px 22px;
   padding: 5rem;
+  background: #B0E0E6;
+}
+.main-content .top-content img {
+  width: 40%;
 }
 .main-content .top-content .intro {
   width: 40%;
@@ -189,6 +193,7 @@ h1 {
   border: 11px dotted #59A0A4;
   border-radius: 40px 40px 40px 40px;
   padding: 5rem;
+  background: linear-gradient(110deg, #DDDDDD 50%, #AAAAAA 50%);
 }
 .main-content .middle-content .mid-h2 {
   font-family: 'Merriweather', serif;
@@ -203,4 +208,7 @@ h1 {
 }
 .main-content .middle-content #mid-content-list .mid-list-h3 {
   border: 1px solid red;
+}
+.main-content .middle-content #mid-content-list .mid-list {
+  background: red;
 }
