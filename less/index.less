@@ -12,8 +12,9 @@
 @top-content-gradient-1: #B0E0E6;
 @contact-border: #FF69B4;
 @contact-h4-border: #FF69B4;
-
-
+@header-h1-font-fam: 'Gayathri', sans-serif;
+@top-content-font-fam: 'Open Sans Condensed', sans-serif;
+@mid-h2-font-fam: 'Merriweather', serif;
 
 
 
@@ -98,9 +99,7 @@ html, body {
 
 
 
-h1{
-	font-family: 'Gayathri', sans-serif;
-}
+
 
 .header{
 	display: flex;
@@ -109,7 +108,8 @@ h1{
 	
 
 	h1{
-		font-size: 2.5rem;
+		font-size: 5.5rem;
+		font-family: @header-h1-font-fam;
 	}//this closes the h1
 
 	.navbar{
@@ -137,7 +137,7 @@ h1{
 		.half-section{
 			flex-direction: column;
 			margin: 3%;
-			font-family: 'Open Sans Condensed', sans-serif;
+			font-family: @top-content-font-fam;
 			.intro{
 				width: 30%;
 			 
@@ -162,7 +162,7 @@ h1{
 		margin: 2%;
 
 		.mid-h2{
-			font-family: 'Merriweather', serif;
+			font-family: @mid-h2-font-fam;
 			width: 50%;
 		}//closes mid-h2
 		
