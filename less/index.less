@@ -6,7 +6,14 @@
 
 
 // mix-ins
+.flex-pad-display{
+	display: flex;
+	padding: 5rem;
+	margin: 2%;
+}
 
+
+//variables
 @body-background:#FFFFCC;
 @middle-border: #8FBC8F;
 @top-content-gradient-1: #B0E0E6;
@@ -15,16 +22,6 @@
 @header-h1-font-fam: 'Gayathri', sans-serif;
 @top-content-font-fam: 'Open Sans Condensed', sans-serif;
 @mid-h2-font-fam: 'Merriweather', serif;
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -125,12 +122,10 @@ html, body {
 	width: 100%;
 	
 	.top-content{
-		display: flex;
+		.flex-pad-display();
 		border: 28px solid rgb(148, 216, 209);
 		border-radius: 22px 22px 22px 22px;
-		padding: 5rem;
 		background: linear-gradient(70deg, #B0E0E6 50%, #39CCCC 50%);
-		margin: 2%;
 		img{
 			width: 40%;
 		}
@@ -150,16 +145,14 @@ html, body {
 	}//closes top-content
 
 	.middle-content{
-		display: flex;
+		.flex-pad-display();
 		//border: 1px solid red;
 		line-height: 4vh;
 		font-size: 3rem;
 		border: 14px inset @middle-border;
 		border-radius: 22px 22px 22px 22px;
-		padding: 5rem;
 		background: linear-gradient(110deg, #7FFF00 50%, #98FB98
 		50%);
-		margin: 2%;
 
 		.mid-h2{
 			font-family: @mid-h2-font-fam;
@@ -176,23 +169,19 @@ html, body {
 	}//closes middle-content
 
 	.bottom-content{
-		display: flex;
+		.flex-pad-display();
 		justify-content: space-between;
 		border: 9px groove #5F5D68;
 		border-radius: 22px 22px 22px 22px;
-		padding: 5%;
 		margin: 2%;
 		background: rgb(238,174,202);
 		background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-		font-size: 3rem;
 		color: white;
 	}//closes bottom-content
 
 	.contact{
+		.flex-pad-display();
 		border-top: 19px dotted @contact-border;
-		padding: 5%;
-		margin: 2%;
-		display: flex;
 		justify-content: center;
 		
 
