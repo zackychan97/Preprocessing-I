@@ -12,6 +12,12 @@
 	margin: 2%;
 }
 
+.mobile-500px-p{
+	line-height: 3vh;
+	width: 100%;
+}
+
+
 
 //variables
 @body-background:#FFFFCC;
@@ -120,6 +126,7 @@ html, body {
 .main-content{
 	padding: 5rem;
 	width: 100%;
+
 	
 	.top-content{
 		.flex-pad-display();
@@ -145,6 +152,12 @@ html, body {
 	}//closes top-content
 
 	.middle-content{
+		@media(max-width: 500px){
+			.mobile-500px-p();
+			flex-direction: column;
+			
+		}
+
 		.flex-pad-display();
 		//border: 1px solid red;
 		line-height: 4vh;
@@ -161,6 +174,11 @@ html, body {
 		
 		.midP{
 			width: 50%;
+
+			@media(max-width: 500px){
+				line-height: 3vh;
+				width: 100%;
+			}
 		}//closes midP
 
 		#mid-content-list{
@@ -173,7 +191,6 @@ html, body {
 		justify-content: space-between;
 		border: 9px groove #5F5D68;
 		border-radius: 22px 22px 22px 22px;
-		margin: 2%;
 		background: rgb(238,174,202);
 		background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 		color: white;
