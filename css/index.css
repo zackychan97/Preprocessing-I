@@ -1,1 +1,269 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+.flex-pad-display {
+  display: flex;
+  padding: 5rem;
+  margin: 2%;
+}
+.mobile-500px-p {
+  line-height: 3vh;
+  width: 100%;
+}
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Open Sans Condensed Bold'), local('OpenSansCondensed-Bold'), url(https://fonts.gstatic.com/s/opensanscondensed/v14/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff0GmDuXMQg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Merriweather Regular'), local('Merriweather-Regular'), url(https://fonts.gstatic.com/s/merriweather/v21/u-440qyriQwlOrhSvowK_l5-fCZJ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Gayathri';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Gayathri Regular'), local('Gayathri-Regular'), url(https://fonts.gstatic.com/s/gayathri/v1/MCoQzAb429DbBilWLLA_-ps.ttf) format('truetype');
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  line-height: 1;
+  font-size: 1.6rem;
+  background: #FFFFCC;
+}
+ol,
+ul {
+  list-style: none;
+  font-size: 1.6rem;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header h1 {
+  font-size: 5.5rem;
+  font-family: 'Gayathri', sans-serif;
+}
+.header .navbar a {
+  text-decoration: none;
+}
+.main-content {
+  padding: 5rem;
+  width: 100%;
+}
+.main-content .top-content {
+  display: flex;
+  padding: 5rem;
+  margin: 2%;
+  border: 28px solid #94d8d1;
+  border-radius: 22px 22px 22px 22px;
+  background: linear-gradient(70deg, #B0E0E6 50%, #39CCCC 50%);
+}
+.main-content .top-content img {
+  width: 40%;
+}
+.main-content .top-content .half-section {
+  flex-direction: column;
+  margin: 3%;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.main-content .top-content .half-section .intro {
+  width: 30%;
+}
+.main-content .top-content .link-up {
+  width: 70%;
+}
+.main-content .middle-content {
+  display: flex;
+  padding: 5rem;
+  margin: 2%;
+  line-height: 4vh;
+  font-size: 3rem;
+  border: 14px inset #8FBC8F;
+  border-radius: 22px 22px 22px 22px;
+  background: linear-gradient(110deg, #7FFF00 50%, #98FB98 50%);
+}
+@media (max-width: 500px) {
+  .main-content .middle-content {
+    line-height: 3vh;
+    width: 100%;
+    flex-direction: column;
+  }
+}
+.main-content .middle-content .mid-h2 {
+  font-family: 'Merriweather', serif;
+  width: 50%;
+}
+.main-content .middle-content .midP {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .main-content .middle-content .midP {
+    line-height: 3vh;
+    width: 100%;
+  }
+}
+.main-content .middle-content #mid-content-list {
+  width: 80%;
+}
+.main-content .bottom-content {
+  display: flex;
+  padding: 5rem;
+  margin: 2%;
+  justify-content: space-between;
+  border: 9px groove #5F5D68;
+  border-radius: 22px 22px 22px 22px;
+  background: #eeaeca;
+  background: radial-gradient(circle, #eeaeca 0%, #94bbe9 100%);
+  color: white;
+}
+.main-content .contact {
+  display: flex;
+  padding: 5rem;
+  margin: 2%;
+  border-top: 19px dotted #FF69B4;
+  justify-content: center;
+}
+.main-content .contact .contact-h4 {
+  border-bottom: 19px solid #FF69B4;
+  border-radius: 0px 0px 20px 20px;
+  width: 60%;
+  font-size: 5rem;
+}
+.main-content .contact .contact-h4 #contact-list {
+  font-size: 3rem;
+}

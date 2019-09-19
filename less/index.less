@@ -4,6 +4,40 @@
    License: none (public domain)
 */
 
+
+// mix-ins
+.flex-pad-display{
+	display: flex;
+	padding: 5rem;
+	margin: 2%;
+}
+
+.mobile-500px-p{
+	line-height: 3vh;
+	width: 100%;
+}
+
+
+
+//variables
+@body-background:#FFFFCC;
+@middle-border: #8FBC8F;
+@top-content-gradient-1: #B0E0E6;
+@contact-border: #FF69B4;
+@contact-h4-border: #FF69B4;
+@header-h1-font-fam: 'Gayathri', sans-serif;
+@top-content-font-fam: 'Open Sans Condensed', sans-serif;
+@mid-h2-font-fam: 'Merriweather', serif;
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Gayathri&display=swap');
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -19,21 +53,27 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+html{
+	font-size: 62.5%;
+}
 body {
 	line-height: 1;
+	font-size: 1.6rem;
+	background: @body-background;
 }
 ol, ul {
 	list-style: none;
+	font-size: 1.6rem;
 }
 blockquote, q {
 	quotes: none;
@@ -50,10 +90,143 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html, body {
     height: 100%;
 }
+
+
+
+
+
+
+
+
+.header{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+
+	h1{
+		font-size: 5.5rem;
+		font-family: @header-h1-font-fam;
+	}//this closes the h1
+
+	.navbar{
+		
+		a{
+			text-decoration: none;
+		}
+	}//this closes navbar
+}//this closes the header
+
+.main-content{
+	padding: 5rem;
+	width: 100%;
+
+	
+	.top-content{
+		.flex-pad-display();
+		border: 28px solid rgb(148, 216, 209);
+		border-radius: 22px 22px 22px 22px;
+		background: linear-gradient(70deg, #B0E0E6 50%, #39CCCC 50%);
+		img{
+			width: 40%;
+		}
+		.half-section{
+			flex-direction: column;
+			margin: 3%;
+			font-family: @top-content-font-fam;
+			.intro{
+				width: 30%;
+			 
+			}//closes intro
+		}//closes half-section
+
+		.link-up{
+			width: 70%;
+		}//closes link-up
+	}//closes top-content
+
+	.middle-content{
+		@media(max-width: 500px){
+			.mobile-500px-p();
+			flex-direction: column;
+			
+		}
+
+		.flex-pad-display();
+		//border: 1px solid red;
+		line-height: 4vh;
+		font-size: 3rem;
+		border: 14px inset @middle-border;
+		border-radius: 22px 22px 22px 22px;
+		background: linear-gradient(110deg, #7FFF00 50%, #98FB98
+		50%);
+
+		.mid-h2{
+			font-family: @mid-h2-font-fam;
+			width: 50%;
+		}//closes mid-h2
+		
+		.midP{
+			width: 50%;
+
+			@media(max-width: 500px){
+				line-height: 3vh;
+				width: 100%;
+			}
+		}//closes midP
+
+		#mid-content-list{
+			width: 80%;
+		}//closes mid-content-list
+	}//closes middle-content
+
+	.bottom-content{
+		.flex-pad-display();
+		justify-content: space-between;
+		border: 9px groove #5F5D68;
+		border-radius: 22px 22px 22px 22px;
+		background: rgb(238,174,202);
+		background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+		color: white;
+	}//closes bottom-content
+
+	.contact{
+		.flex-pad-display();
+		border-top: 19px dotted @contact-border;
+		justify-content: center;
+		
+
+		.contact-h4{
+			border-bottom: 19px solid @contact-h4-border;
+			border-radius: 0px 0px 20px 20px;
+			width: 60%;
+			font-size: 5rem;
+			
+
+			
+			#contact-list{
+				font-size: 3rem;
+			}
+		
+		}
+
+	}//closes contact
+}//closes main-content
+
+
+
+
+
+
+
+
+
+
+
 
